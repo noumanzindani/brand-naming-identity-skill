@@ -1,0 +1,61 @@
+{
+  "skill_name": "brand-naming-identity",
+  "evals": [
+    {
+      "id": 1,
+      "name": "rename-home-services-app",
+      "prompt": "i'm building a home-services marketplace app in Pakistan (plumbers, electricians, AC repair, cleaners) \u2014 two apps, one for customers and one for providers. current working name is 'Ez Hand' but i think it's weak. help me find a better name. Pakistan first, then UAE and Saudi. should feel trustworthy but friendly, not corporate.",
+      "expected_output": "Brief/strategy first (onliness, associations, criteria), then a curated shortlist of 8-12 names in safe/bold pairs with stories, in-context store titles, linguistic flags for Urdu/Arabic, architecture advice for the two apps, and a costed validation checklist (IPO-Pakistan, Madrid, classes).",
+      "files": [],
+      "assertions": [
+        "Lists clarifying brief questions before generating names",
+        "Writes a brief/strategy (onliness statement or core associations) before the name list",
+        "States evaluation criteria for choosing a name",
+        "Shortlist contains 8-12 curated names (not a dump of 30+)",
+        "Presents names as safe vs bold options/pairs",
+        "Shows names in context as an app-store title within 30 characters",
+        "Flags Urdu and Arabic meaning/pronunciation checks by native speakers",
+        "Addresses brand architecture for the customer and provider apps",
+        "Validation steps mention IPO-Pakistan and the Madrid Protocol",
+        "States that checks done are preliminary, not legal clearance",
+        "Stays in scope: no theme code/token files or identity routes; offers them as a next step",
+        "Any scorecard totals shown add up correctly from their per-criterion scores"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "flutter-theme-from-brand",
+      "prompt": "Turn my ride-hailing brand into a Flutter theme. Brand colour is #FFC300 (taxi yellow), secondary is near-black #111111. Feel: bold, fast, reliable. I need light + dark ThemeData and design tokens I can reuse.",
+      "expected_output": "DTCG-format tokens JSON, Dart ColorScheme.fromSeed with a deliberate variant (fidelity/vibrant) plus light/dark/high-contrast, notes that yellow seed needs dark onPrimary, actual contrast numbers checked, icon guidance.",
+      "files": [],
+      "assertions": [
+        "Produces a DTCG-format tokens file using $value and $type",
+        "Provides both light and dark ThemeData",
+        "Uses dark (not white) foreground on the yellow primary",
+        "Reports numeric WCAG contrast ratios for key colour pairs",
+        "Offers a high-contrast variant (contrastLevel or equivalent)",
+        "Keeps the exact brand hex separately from the generated seed scheme",
+        "Token colour values use the DTCG 2025.10 object form (colorSpace + components)",
+        "Verifies contrast on the generated scheme roles (not only the two brand hexes)",
+        "Light-mode surfaces are neutral (not seed-tinted cream) or the tint is explicitly justified"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "rename-savings-app",
+      "prompt": "my app is called Time Vault \u2014 people lock money toward a goal (like a car or wedding) and can't withdraw until the date. users are in pakistan, payments via stripe, maybe raast later. i feel the name is generic. should i rename? want it to feel safe and trustworthy but also motivating, not like a boring bank.",
+      "expected_output": "Verdict on Time Vault for a fintech savings product (descriptive, crowded, existing TIME VAULT mark), brief with finance-specific associations, 8-12 names in safe/bold pairs with store titles, Urdu/Islamic-finance sensitivity flags (e.g. riba/interest connotations), class 36 added for financial services, SECP/SBP regulatory naming notes as a flag, no theme files.",
+      "files": [],
+      "assertions": [
+        "Gives a clear keep/rename verdict with reasons",
+        "Writes a brief (associations / onliness) before suggesting names",
+        "Shortlist of 8-12 names presented as safe vs bold options",
+        "Each shortlisted name has a store title within 30 characters",
+        "Includes Nice class 36 (financial services) in addition to 9/42",
+        "Flags Urdu/Islamic-finance sensitivities (e.g. interest/riba connotations) or native-speaker checks",
+        "Labels conflict checks as preliminary, not legal clearance",
+        "Stays in scope: no theme code/token files; offers identity as a next step"
+      ]
+    }
+  ]
+}
