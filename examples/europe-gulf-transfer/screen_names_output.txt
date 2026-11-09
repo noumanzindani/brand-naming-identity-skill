@@ -1,0 +1,11 @@
+name             len   title syll  .com       flags
+Safir              5      29    2  taken?     
+Hudhud             6      30    2  maybe free 
+Certa              5      29    2  taken?     sound has multiple spellings
+Akeed              5      29    2  taken?     double letter (spelling ambiguity)
+Wasla              5      29    2  taken?     
+Qasid              5      29    2  taken?     
+Surely             6      30    3  taken?     
+Rasil              5      29    2  taken?     
+
+'!' = store title over 30 chars. Knockout signals only — not clearance.
